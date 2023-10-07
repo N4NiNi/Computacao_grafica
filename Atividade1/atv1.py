@@ -74,7 +74,7 @@ def degrade():
         imagem_degrade[:, x1:x2] = current_color
 
     # Salvar a imagem
-    cv2.imwrite("quadrado_vermelho.png", imagem_degrade)
+    cv2.imwrite("quadrado_degrade.png", imagem_degrade)
     # Exibir a imagem
     cv2.imshow('Quadrado Degrade', imagem_degrade)
     cv2.waitKey(0)
