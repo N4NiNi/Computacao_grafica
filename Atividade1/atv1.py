@@ -40,7 +40,7 @@ def quadrado():
     cv2.rectangle(imagem_quadrado, (canto_superior_esquerdo_x, canto_superior_esquerdo_y),
                   (canto_inferior_direito_x, canto_inferior_direito_y), cor_b, -1)
     # Salvar a imagem
-    cv2.imwrite("quadrado_vermelho.png", imagem_quadrado)
+    cv2.imwrite("quadrado_azul.png", imagem_quadrado)
     cv2.imshow("Imagem", imagem_quadrado)
     cv2.waitKey(0)
     cv2.destroyAllWindows()

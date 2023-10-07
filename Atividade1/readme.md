@@ -2,7 +2,7 @@
 
 Este repositório contém dois exemplos de código em linguagens diferentes: C++ e Python. Abaixo, você encontrará uma explicação de como cada código funciona e como executá-los.
 
-## Exemplo 1: exemplo1.cpp
+## Atividade 1: exemplo1.cpp
 
 Este é um programa C++ que gera uma imagem PPM simples degradê. Aqui está uma explicação passo a passo do código:
 
@@ -19,17 +19,45 @@ Este é um programa C++ que gera uma imagem PPM simples degradê. Aqui está uma
 Para compilar e executar o código `exemplo1.cpp`, siga os passos abaixo:
 
 1. Certifique-se de ter um compilador C++ (como g++) instalado em seu sistema.
-2. Crie um arquivo de código-fonte chamado `exemplo1.cpp` e cole o código dentro dele.
-3. Abra um terminal e navegue até o diretório onde você salvou o arquivo `exemplo1.cpp`.
-4. Compile o código usando o seguinte comando:
+2. Abra um terminal e navegue até o diretório onde você salvou o arquivo `exemplo1.cpp`.
+3. Compile o código usando o seguinte comando:
 
    ```shell
    g++ exemplo1.cpp -o exemplo1
 
-1. Isso irá gerar um arquivo executável chamado exemplo1.
+4. Isso irá gerar um arquivo executável chamado exemplo1.
 
+    ```shell
    ./exemplo1 > imagem.ppm
 
-   Isso executará o programa e redirecionará a saída para um arquivo chamado imagem.ppm.
+5. Isso executará o programa e redirecionará a saída para um arquivo chamado imagem.ppm.
 
 
+## Atividade 2: atv1.py
+    Este é um programa Python que cria três imagens diferentes: um círculo vermelho, um quadrado azul e um quadrado com um degradê de vermelho a azul. O código está organizado em funções para desenhar cada forma, salvar as imagens e exibi-las (opcionalmente). Aqui está uma explicação das principais partes do código:
+
+1. circulo(): Desenha um círculo vermelho no centro de uma imagem preta.
+2. quadrado(): Desenha um quadrado azul no centro de uma imagem preta.
+3. degrade(): Cria um degradê de vermelho a azul em uma imagem.
+
+### Como Executar
+Para executar o código atv1.py, siga os passos abaixo:
+
+1. Certifique-se de ter o Python e as bibliotecas OpenCV (cv2) e NumPy instalados em seu sistema.
+
+2. Abra um terminal e navegue até o diretório onde você salvou o arquivo atv1.py.
+
+3. Execute o programa com o seguinte comando:
+
+    ```shell
+    python atv1.py
+
+Isso executará o programa Python, que criará as imagens e as salvará no diretório atual.
+
+As imagens geradas serão:
+
+* circulo_vermelho.png: Um círculo vermelho.
+* quadrado_azul.png: Um quadrado azul.
+* quadrado_degrade.png: Um quadrado com um degradê de vermelho a azul.
+
+Lembre-se de que você deve ter as bibliotecas OpenCV e NumPy instaladas para que o código Python funcione corretamente. Você pode instalá-las usando o pip se ainda não estiverem instaladas.
