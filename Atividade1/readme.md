@@ -34,7 +34,7 @@ Para compilar e executar o código `exemplo1.cpp`, siga os passos abaixo:
 
 
 ## Atividade 2: atv1.py
-    Este é um programa Python que cria três imagens diferentes: um círculo vermelho, um quadrado azul e um quadrado com um degradê de vermelho a azul. O código está organizado em funções para desenhar cada forma, salvar as imagens e exibi-las (opcionalmente). Aqui está uma explicação das principais partes do código:
+Este é um programa Python que cria três imagens diferentes: um círculo vermelho, um quadrado azul e um quadrado com um degradê de vermelho a azul. O código está organizado em funções para desenhar cada forma, salvar as imagens e exibi-las (opcionalmente). Aqui está uma explicação das principais partes do código:
 
 1. circulo(): Desenha um círculo vermelho no centro de uma imagem preta.
 2. quadrado(): Desenha um quadrado azul no centro de uma imagem preta.
