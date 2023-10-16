@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html class="writer-html5" lang="pt-BR" >
+<head>
+  <meta charset="utf-8" /><meta name="viewport" content="width=device-width, initial-scale=1" />
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Atividade2 package &mdash; documentação Atividades_CG 0.1</title>
+      <link rel="stylesheet" href="_static/pygments.css" type="text/css" />
+      <link rel="stylesheet" href="_static/css/theme.css" type="text/css" />
+  <!--[if lt IE 9]>
+    <script src="_static/js/html5shiv.min.js"></script>
+  <![endif]-->
+  
+        <script src="_static/jquery.js?v=5d32c60e"></script>
+        <script src="_static/_sphinx_javascript_frameworks_compat.js?v=2cd50e6c"></script>
+        <script src="_static/documentation_options.js?v=88519e4e"></script>
+        <script src="_static/doctools.js?v=888ff710"></script>
+        <script src="_static/sphinx_highlight.js?v=dc90522c"></script>
+        <script src="_static/translations.js?v=000972dd"></script>
+    <script src="_static/js/theme.js"></script>
+    <link rel="index" title="Índice" href="genindex.html" />
+    <link rel="search" title="Buscar" href="search.html" />
+    <link rel="next" title="Atividade2.testes package" href="Atividade2.testes.html" />
+    <link rel="prev" title="Atividade1 package" href="Atividade1.html" /> 
+</head>
+
+<body class="wy-body-for-nav"> 
+  <div class="wy-grid-for-nav">
+    <nav data-toggle="wy-nav-shift" class="wy-nav-side">
+      <div class="wy-side-scroll">
+        <div class="wy-side-nav-search" >
+
+          
+          
+          <a href="index.html" class="icon icon-home">
+            Atividades_CG
+          </a>
+<div role="search">
+  <form id="rtd-search-form" class="wy-form" action="search.html" method="get">
+    <input type="text" name="q" placeholder="Pesquisar documentos" aria-label="Pesquisar documentos" />
+    <input type="hidden" name="check_keywords" value="yes" />
+    <input type="hidden" name="area" value="default" />
+  </form>
+</div>
+        </div><div class="wy-menu wy-menu-vertical" data-spy="affix" role="navigation" aria-label="Menu de navegação">
+              <p class="caption" role="heading"><span class="caption-text">Contents:</span></p>
+<ul class="current">
+<li class="toctree-l1 current"><a class="reference internal" href="modules.html">Computacao_grafica</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="Atividade1.html">Atividade1 package</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Atividade2 package</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#subpackages">Subpackages</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="Atividade2.testes.html">Atividade2.testes package</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#submodules">Submodules</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#atividade2-atividade2-module">Atividade2.atividade2 module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#atividade2-color-module">Atividade2.color module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2.conf">Atividade2.conf module</a></li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2.mat2">Atividade2.mat2 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Atividade2.mat2.Mat2"><code class="docutils literal notranslate"><span class="pre">Mat2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2.mat3">Atividade2.mat3 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Atividade2.mat3.Mat3"><code class="docutils literal notranslate"><span class="pre">Mat3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2.mat4">Atividade2.mat4 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Atividade2.mat4.Mat4"><code class="docutils literal notranslate"><span class="pre">Mat4</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2.vec2">Atividade2.vec2 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Atividade2.vec2.Vec2"><code class="docutils literal notranslate"><span class="pre">Vec2</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2.vec3">Atividade2.vec3 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Atividade2.vec3.Vec3"><code class="docutils literal notranslate"><span class="pre">Vec3</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2.vec4">Atividade2.vec4 module</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#Atividade2.vec4.Vec4"><code class="docutils literal notranslate"><span class="pre">Vec4</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#module-Atividade2">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+
+        </div>
+      </div>
+    </nav>
+
+    <section data-toggle="wy-nav-shift" class="wy-nav-content-wrap"><nav class="wy-nav-top" aria-label="Menu de navegação móvel" >
+          <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
+          <a href="index.html">Atividades_CG</a>
+      </nav>
+
+      <div class="wy-nav-content">
+        <div class="rst-content">
+          <div role="navigation" aria-label="Navegação da página">
+  <ul class="wy-breadcrumbs">
+      <li><a href="index.html" class="icon icon-home" aria-label="Home"></a></li>
+          <li class="breadcrumb-item"><a href="modules.html">Computacao_grafica</a></li>
+      <li class="breadcrumb-item active">Atividade2 package</li>
+      <li class="wy-breadcrumbs-aside">
+            <a href="_sources/Atividade2.rst.txt" rel="nofollow"> Ver código-fonte da página</a>
+      </li>
+  </ul>
+  <hr/>
+</div>
+          <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
+           <div itemprop="articleBody">
+             
+  <section id="atividade2-package">
+<h1>Atividade2 package<a class="headerlink" href="#atividade2-package" title="Link to this heading"></a></h1>
+<section id="subpackages">
+<h2>Subpackages<a class="headerlink" href="#subpackages" title="Link to this heading"></a></h2>
+<div class="toctree-wrapper compound">
+<ul>
+<li class="toctree-l1"><a class="reference internal" href="Atividade2.testes.html">Atividade2.testes package</a><ul>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#submodules">Submodules</a></li>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#module-Atividade2.testes.test_mat2">Atividade2.testes.test_mat2 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat2.test_mat2_addition"><code class="docutils literal notranslate"><span class="pre">test_mat2_addition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat2.test_mat2_multiplication"><code class="docutils literal notranslate"><span class="pre">test_mat2_multiplication()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat2.test_mat2_subtraction"><code class="docutils literal notranslate"><span class="pre">test_mat2_subtraction()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#module-Atividade2.testes.test_mat3">Atividade2.testes.test_mat3 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat3.test_mat3_addition"><code class="docutils literal notranslate"><span class="pre">test_mat3_addition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat3.test_mat3_multiplication"><code class="docutils literal notranslate"><span class="pre">test_mat3_multiplication()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat3.test_mat3_subtraction"><code class="docutils literal notranslate"><span class="pre">test_mat3_subtraction()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#module-Atividade2.testes.test_mat4">Atividade2.testes.test_mat4 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat4.test_mat4_addition"><code class="docutils literal notranslate"><span class="pre">test_mat4_addition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat4.test_mat4_multiplication"><code class="docutils literal notranslate"><span class="pre">test_mat4_multiplication()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_mat4.test_mat4_subtraction"><code class="docutils literal notranslate"><span class="pre">test_mat4_subtraction()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#module-Atividade2.testes.test_vec2">Atividade2.testes.test_vec2 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec2.test_vec2_addition"><code class="docutils literal notranslate"><span class="pre">test_vec2_addition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec2.test_vec2_division"><code class="docutils literal notranslate"><span class="pre">test_vec2_division()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec2.test_vec2_multiplication"><code class="docutils literal notranslate"><span class="pre">test_vec2_multiplication()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec2.test_vec2_negation"><code class="docutils literal notranslate"><span class="pre">test_vec2_negation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec2.test_vec2_subtraction"><code class="docutils literal notranslate"><span class="pre">test_vec2_subtraction()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#module-Atividade2.testes.test_vec3">Atividade2.testes.test_vec3 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec3.test_vec3_addition"><code class="docutils literal notranslate"><span class="pre">test_vec3_addition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec3.test_vec3_division"><code class="docutils literal notranslate"><span class="pre">test_vec3_division()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec3.test_vec3_length"><code class="docutils literal notranslate"><span class="pre">test_vec3_length()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec3.test_vec3_multiplication"><code class="docutils literal notranslate"><span class="pre">test_vec3_multiplication()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec3.test_vec3_negation"><code class="docutils literal notranslate"><span class="pre">test_vec3_negation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec3.test_vec3_subtraction"><code class="docutils literal notranslate"><span class="pre">test_vec3_subtraction()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#module-Atividade2.testes.test_vec4">Atividade2.testes.test_vec4 module</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec4.test_vec4_addition"><code class="docutils literal notranslate"><span class="pre">test_vec4_addition()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec4.test_vec4_division"><code class="docutils literal notranslate"><span class="pre">test_vec4_division()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec4.test_vec4_multiplication"><code class="docutils literal notranslate"><span class="pre">test_vec4_multiplication()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec4.test_vec4_negation"><code class="docutils literal notranslate"><span class="pre">test_vec4_negation()</span></code></a></li>
+<li class="toctree-l3"><a class="reference internal" href="Atividade2.testes.html#Atividade2.testes.test_vec4.test_vec4_subtraction"><code class="docutils literal notranslate"><span class="pre">test_vec4_subtraction()</span></code></a></li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="Atividade2.testes.html#module-Atividade2.testes">Module contents</a></li>
+</ul>
+</li>
+</ul>
+</div>
+</section>
+<section id="submodules">
+<h2>Submodules<a class="headerlink" href="#submodules" title="Link to this heading"></a></h2>
+</section>
+<section id="atividade2-atividade2-module">
+<h2>Atividade2.atividade2 module<a class="headerlink" href="#atividade2-atividade2-module" title="Link to this heading"></a></h2>
+</section>
+<section id="atividade2-color-module">
+<h2>Atividade2.color module<a class="headerlink" href="#atividade2-color-module" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Atividade2.conf">
+<span id="atividade2-conf-module"></span><h2>Atividade2.conf module<a class="headerlink" href="#module-Atividade2.conf" title="Link to this heading"></a></h2>
+</section>
+<section id="module-Atividade2.mat2">
+<span id="atividade2-mat2-module"></span><h2>Atividade2.mat2 module<a class="headerlink" href="#module-Atividade2.mat2" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Atividade2.mat2.Mat2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Atividade2.mat2.</span></span><span class="sig-name descname"><span class="pre">Mat2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Atividade2/mat2.html#Mat2"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#Atividade2.mat2.Mat2" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Atividade2.mat3">
+<span id="atividade2-mat3-module"></span><h2>Atividade2.mat3 module<a class="headerlink" href="#module-Atividade2.mat3" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Atividade2.mat3.Mat3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Atividade2.mat3.</span></span><span class="sig-name descname"><span class="pre">Mat3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Atividade2/mat3.html#Mat3"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#Atividade2.mat3.Mat3" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Atividade2.mat4">
+<span id="atividade2-mat4-module"></span><h2>Atividade2.mat4 module<a class="headerlink" href="#module-Atividade2.mat4" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Atividade2.mat4.Mat4">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Atividade2.mat4.</span></span><span class="sig-name descname"><span class="pre">Mat4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">a</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">b</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">c</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">d</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">e</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">f</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">g</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">h</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">i</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">j</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">k</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">l</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">m</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">n</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">o</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">p</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Atividade2/mat4.html#Mat4"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#Atividade2.mat4.Mat4" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Atividade2.vec2">
+<span id="atividade2-vec2-module"></span><h2>Atividade2.vec2 module<a class="headerlink" href="#module-Atividade2.vec2" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Atividade2.vec2.Vec2">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Atividade2.vec2.</span></span><span class="sig-name descname"><span class="pre">Vec2</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Atividade2/vec2.html#Vec2"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#Atividade2.vec2.Vec2" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Atividade2.vec3">
+<span id="atividade2-vec3-module"></span><h2>Atividade2.vec3 module<a class="headerlink" href="#module-Atividade2.vec3" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Atividade2.vec3.Vec3">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Atividade2.vec3.</span></span><span class="sig-name descname"><span class="pre">Vec3</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Atividade2/vec3.html#Vec3"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#Atividade2.vec3.Vec3" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+<dl class="py method">
+<dt class="sig sig-object py" id="Atividade2.vec3.Vec3.length">
+<span class="sig-name descname"><span class="pre">length</span></span><span class="sig-paren">(</span><span class="sig-paren">)</span><a class="reference internal" href="_modules/Atividade2/vec3.html#Vec3.length"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#Atividade2.vec3.Vec3.length" title="Link to this definition"></a></dt>
+<dd></dd></dl>
+
+</dd></dl>
+
+</section>
+<section id="module-Atividade2.vec4">
+<span id="atividade2-vec4-module"></span><h2>Atividade2.vec4 module<a class="headerlink" href="#module-Atividade2.vec4" title="Link to this heading"></a></h2>
+<dl class="py class">
+<dt class="sig sig-object py" id="Atividade2.vec4.Vec4">
+<em class="property"><span class="pre">class</span><span class="w"> </span></em><span class="sig-prename descclassname"><span class="pre">Atividade2.vec4.</span></span><span class="sig-name descname"><span class="pre">Vec4</span></span><span class="sig-paren">(</span><em class="sig-param"><span class="n"><span class="pre">x</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">y</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">z</span></span></em>, <em class="sig-param"><span class="n"><span class="pre">a</span></span></em><span class="sig-paren">)</span><a class="reference internal" href="_modules/Atividade2/vec4.html#Vec4"><span class="viewcode-link"><span class="pre">[código</span> <span class="pre">fonte]</span></span></a><a class="headerlink" href="#Atividade2.vec4.Vec4" title="Link to this definition"></a></dt>
+<dd><p>Base: <code class="xref py py-class docutils literal notranslate"><span class="pre">object</span></code></p>
+</dd></dl>
+
+</section>
+<section id="module-Atividade2">
+<span id="module-contents"></span><h2>Module contents<a class="headerlink" href="#module-Atividade2" title="Link to this heading"></a></h2>
+</section>
+</section>
+
+
+           </div>
+          </div>
+          <footer><div class="rst-footer-buttons" role="navigation" aria-label="Rodapé">
+        <a href="Atividade1.html" class="btn btn-neutral float-left" title="Atividade1 package" accesskey="p" rel="prev"><span class="fa fa-arrow-circle-left" aria-hidden="true"></span> Anterior</a>
+        <a href="Atividade2.testes.html" class="btn btn-neutral float-right" title="Atividade2.testes package" accesskey="n" rel="next">Próximo <span class="fa fa-arrow-circle-right" aria-hidden="true"></span></a>
+    </div>
+
+  <hr/>
+
+  <div role="contentinfo">
+    <p>&#169; Direitos autorais 2023, Vinicius Nanini.</p>
+  </div>
+
+  Compilado com <a href="https://www.sphinx-doc.org/">Sphinx</a> usando um
+    <a href="https://github.com/readthedocs/sphinx_rtd_theme">tema</a>
+    fornecido por <a href="https://readthedocs.org">Read the Docs</a>.
+   
+
+</footer>
+        </div>
+      </div>
+    </section>
+  </div>
+  <script>
+      jQuery(function () {
+          SphinxRtdTheme.Navigation.enable(true);
+      });
+  </script> 
+
+</body>
+</html>
