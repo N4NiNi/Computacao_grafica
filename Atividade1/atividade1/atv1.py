@@ -2,6 +2,19 @@ import cv2
 import numpy as np
 
 def circulo():
+    """
+    Função para desenhar um círculo vermelho em uma imagem.
+
+    Esta função cria uma imagem em branco e desenha um círculo vermelho no centro dela.
+    A imagem resultante é salva como "circulo_vermelho.png" e pode ser exibida.
+
+    Args:
+        Nenhum.
+
+    Returns:
+        Nenhum.
+    """
+
     largura = 400
     altura = 400
     imagem_circulo = np.ones((altura, largura, 3), dtype=np.uint8) * 255
@@ -22,6 +35,19 @@ def circulo():
     cv2.destroyAllWindows()
 
 def quadrado():
+
+    """
+    Função para desenhar um círculo vermelho em uma imagem.
+
+    Esta função cria uma imagem em branco e desenha um círculo vermelho no centro dela.
+    A imagem resultante é salva como "circulo_vermelho.png" e pode ser exibida.
+
+    Args:
+        Nenhum.
+
+    Returns:
+        Nenhum.
+    """
     
     # Tamanho da imagem
     largura = 400
@@ -46,6 +72,19 @@ def quadrado():
     cv2.destroyAllWindows()
 
 def degrade():
+    """
+    Função para criar uma imagem com um quadrado degradê de cores.
+
+    Esta função cria uma imagem com um quadrado que apresenta um degradê de cores que vai do azul ao vermelho.
+    A imagem resultante é salva como "quadrado_degrade.png" e pode ser exibida.
+
+    Args:
+        Nenhum.
+
+    Returns:
+        Nenhum.
+    """
+    
     # Tam da img
     largura = 400
     altura = 400
