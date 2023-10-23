@@ -6,3 +6,4 @@ Computacao_grafica
 
    Atividade1
    Atividade2
+   Atividade3

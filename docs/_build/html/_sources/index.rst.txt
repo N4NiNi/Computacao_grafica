@@ -1,10 +1,10 @@
-.. Atividades_CG documentation master file, created by
-   sphinx-quickstart on Mon Oct 16 16:17:08 2023.
+.. AtividadeCG documentation master file, created by
+   sphinx-quickstart on Mon Oct 23 19:45:56 2023.
    You can adapt this file completely to your liking, but it should at least
    contain the root `toctree` directive.
 
-Welcome to Atividades_CG's documentation!
-=========================================
+Welcome to AtividadeCG's documentation!
+=======================================
 
 .. toctree::
    :maxdepth: 2

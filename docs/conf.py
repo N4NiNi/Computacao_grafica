@@ -10,7 +10,7 @@ sys.path.insert(0, os.path.abspath('..'))
 # -- Project information -----------------------------------------------------
 # https://www.sphinx-doc.org/en/master/usage/configuration.html#project-information
 
-project = 'Atividades_CG'
+project = 'AtividadeCG'
 copyright = '2023, Vinicius Nanini'
 author = 'Vinicius Nanini'
 release = '0.1'
