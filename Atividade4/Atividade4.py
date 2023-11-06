@@ -4,10 +4,20 @@ import numpy as np
 from PIL import Image, ImageDraw
 
 class ObjViewer:
+    
     def __init__(self, filename):
         self.reader = ObjReader(filename)
 
     def generate_image(self, width, height, output_filename):
+        """
+        Gera imagem do arquivo .obj.
+
+        Args:
+            output_filename: O caminho para o arquivo OBJ.
+            width: largura da imagem
+            height: altura da imagem
+
+        """
         self.reader.read()
         vertices = self.reader.get_vertices()
         faces = self.reader.get_faces()

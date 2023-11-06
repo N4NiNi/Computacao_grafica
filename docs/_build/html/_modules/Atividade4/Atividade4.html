@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Atividade3.Atividade3 &mdash; documentação Atividades_CG 0.4</title>
+  <title>Atividade4.Atividade4 &mdash; documentação Atividades_CG 0.4</title>
       <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
       <link rel="stylesheet" href="../../_static/css/theme.css" type="text/css" />
   <!--[if lt IE 9]>
@@ -60,7 +60,7 @@
   <ul class="wy-breadcrumbs">
       <li><a href="../../index.html" class="icon icon-home" aria-label="Home"></a></li>
           <li class="breadcrumb-item"><a href="../index.html">Código do módulo</a></li>
-      <li class="breadcrumb-item active">Atividade3.Atividade3</li>
+      <li class="breadcrumb-item active">Atividade4.Atividade4</li>
       <li class="wy-breadcrumbs-aside">
       </li>
   </ul>
@@ -69,13 +69,63 @@
           <div role="main" class="document" itemscope="itemscope" itemtype="http://schema.org/Article">
            <div itemprop="articleBody">
              
-  <h1>Código fonte para Atividade3.Atividade3</h1><div class="highlight"><pre>
+  <h1>Código fonte para Atividade4.Atividade4</h1><div class="highlight"><pre>
 <span></span>
 
 <span class="kn">import</span> <span class="nn">numpy</span> <span class="k">as</span> <span class="nn">np</span>
+<span class="kn">from</span> <span class="nn">PIL</span> <span class="kn">import</span> <span class="n">Image</span><span class="p">,</span> <span class="n">ImageDraw</span>
+
+<div class="viewcode-block" id="ObjViewer">
+<a class="viewcode-back" href="../../Atividade4.html#Atividade4.Atividade4.ObjViewer">[documentos]</a>
+<span class="k">class</span> <span class="nc">ObjViewer</span><span class="p">:</span>
+    
+    <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reader</span> <span class="o">=</span> <span class="n">ObjReader</span><span class="p">(</span><span class="n">filename</span><span class="p">)</span>
+
+<div class="viewcode-block" id="ObjViewer.generate_image">
+<a class="viewcode-back" href="../../Atividade4.html#Atividade4.Atividade4.ObjViewer.generate_image">[documentos]</a>
+    <span class="k">def</span> <span class="nf">generate_image</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">,</span> <span class="n">output_filename</span><span class="p">):</span>
+<span class="w">        </span><span class="sd">&quot;&quot;&quot;</span>
+<span class="sd">        Gera imagem do arquivo .obj.</span>
+
+<span class="sd">        Args:</span>
+<span class="sd">            output_filename: O caminho para o arquivo OBJ.</span>
+<span class="sd">            width: largura da imagem</span>
+<span class="sd">            height: altura da imagem</span>
+
+<span class="sd">        &quot;&quot;&quot;</span>
+        <span class="bp">self</span><span class="o">.</span><span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
+        <span class="n">vertices</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">reader</span><span class="o">.</span><span class="n">get_vertices</span><span class="p">()</span>
+        <span class="n">faces</span> <span class="o">=</span> <span class="bp">self</span><span class="o">.</span><span class="n">reader</span><span class="o">.</span><span class="n">get_faces</span><span class="p">()</span>
+        
+
+        <span class="c1"># Criar uma imagem em branco</span>
+        <span class="n">img</span> <span class="o">=</span> <span class="n">Image</span><span class="o">.</span><span class="n">new</span><span class="p">(</span><span class="s1">&#39;RGB&#39;</span><span class="p">,</span> <span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">),</span> <span class="s1">&#39;white&#39;</span><span class="p">)</span>
+        <span class="n">draw</span> <span class="o">=</span> <span class="n">ImageDraw</span><span class="o">.</span><span class="n">Draw</span><span class="p">(</span><span class="n">img</span><span class="p">)</span>
+
+        <span class="c1"># Escala e translada os vértices para ajustar à imagem</span>
+        <span class="n">scale</span> <span class="o">=</span> <span class="nb">min</span><span class="p">(</span><span class="n">width</span><span class="p">,</span> <span class="n">height</span><span class="p">)</span>
+        <span class="k">for</span> <span class="n">i</span> <span class="ow">in</span> <span class="nb">range</span><span class="p">(</span><span class="nb">len</span><span class="p">(</span><span class="n">vertices</span><span class="p">)):</span>
+            <span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">,</span> <span class="n">z</span> <span class="o">=</span> <span class="n">vertices</span><span class="p">[</span><span class="n">i</span><span class="p">]</span>
+            <span class="n">x</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="n">x</span> <span class="o">+</span> <span class="mi">13</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.05</span> <span class="o">*</span> <span class="n">scale</span><span class="p">)</span>
+            <span class="n">y</span> <span class="o">=</span> <span class="nb">int</span><span class="p">((</span><span class="mi">1</span> <span class="o">-</span> <span class="p">(</span><span class="n">y</span> <span class="o">+</span> <span class="mf">0.5</span><span class="p">)</span> <span class="o">*</span> <span class="mf">0.05</span><span class="p">)</span> <span class="o">*</span> <span class="n">scale</span><span class="p">)</span>
+            <span class="n">vertices</span><span class="p">[</span><span class="n">i</span><span class="p">]</span> <span class="o">=</span> <span class="p">(</span><span class="n">x</span><span class="p">,</span> <span class="n">y</span><span class="p">)</span>
+
+        <span class="n">face_colors</span> <span class="o">=</span> <span class="p">[</span><span class="s1">&#39;red&#39;</span><span class="p">,</span> <span class="s1">&#39;green&#39;</span><span class="p">,</span> <span class="s1">&#39;blue&#39;</span><span class="p">,</span> <span class="s1">&#39;yellow&#39;</span><span class="p">,</span> <span class="s1">&#39;purple&#39;</span><span class="p">,</span> <span class="s1">&#39;cyan&#39;</span><span class="p">,</span> <span class="s1">&#39;magenta&#39;</span><span class="p">,</span> <span class="s1">&#39;orange&#39;</span><span class="p">]</span>
+
+        <span class="c1"># Desenhar as faces</span>
+        <span class="k">for</span> <span class="n">face</span> <span class="ow">in</span> <span class="n">faces</span><span class="p">:</span>
+            <span class="n">points</span> <span class="o">=</span> <span class="p">[</span><span class="n">vertices</span><span class="p">[</span><span class="nb">int</span><span class="p">(</span><span class="n">vertex</span><span class="o">.</span><span class="n">split</span><span class="p">(</span><span class="s1">&#39;/&#39;</span><span class="p">)[</span><span class="mi">0</span><span class="p">])</span> <span class="o">-</span> <span class="mi">1</span><span class="p">]</span> <span class="k">for</span> <span class="n">vertex</span> <span class="ow">in</span> <span class="n">face</span><span class="p">]</span>
+            <span class="n">color</span> <span class="o">=</span> <span class="n">face_colors</span><span class="p">[</span><span class="n">i</span> <span class="o">%</span> <span class="nb">len</span><span class="p">(</span><span class="n">face_colors</span><span class="p">)]</span>
+            <span class="n">draw</span><span class="o">.</span><span class="n">polygon</span><span class="p">(</span><span class="n">points</span><span class="p">,</span> <span class="n">outline</span><span class="o">=</span><span class="s1">&#39;black&#39;</span><span class="p">,</span> <span class="n">fill</span><span class="o">=</span><span class="n">color</span><span class="p">)</span>
+
+        <span class="c1"># Salvar a imagem</span>
+        <span class="n">img</span><span class="o">.</span><span class="n">save</span><span class="p">(</span><span class="n">output_filename</span><span class="p">)</span></div>
+</div>
+
 
 <div class="viewcode-block" id="ObjReader">
-<a class="viewcode-back" href="../../Atividade3.html#Atividade3.Atividade3.ObjReader">[documentos]</a>
+<a class="viewcode-back" href="../../Atividade4.html#Atividade4.Atividade4.ObjReader">[documentos]</a>
 <span class="k">class</span> <span class="nc">ObjReader</span><span class="p">:</span>
 
   <span class="k">def</span> <span class="fm">__init__</span><span class="p">(</span><span class="bp">self</span><span class="p">,</span> <span class="n">filename</span><span class="p">):</span>
@@ -92,7 +142,7 @@
     <span class="bp">self</span><span class="o">.</span><span class="n">faces</span> <span class="o">=</span> <span class="kc">None</span>
 
 <div class="viewcode-block" id="ObjReader.read">
-<a class="viewcode-back" href="../../Atividade3.html#Atividade3.Atividade3.ObjReader.read">[documentos]</a>
+<a class="viewcode-back" href="../../Atividade4.html#Atividade4.Atividade4.ObjReader.read">[documentos]</a>
   <span class="k">def</span> <span class="nf">read</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Função que lê o arquivo .obj e guarda os valores das faces e vertice do arquivo.</span>
@@ -117,7 +167,7 @@
 
 
 <div class="viewcode-block" id="ObjReader.get_vertices">
-<a class="viewcode-back" href="../../Atividade3.html#Atividade3.Atividade3.ObjReader.get_vertices">[documentos]</a>
+<a class="viewcode-back" href="../../Atividade4.html#Atividade4.Atividade4.ObjReader.get_vertices">[documentos]</a>
   <span class="k">def</span> <span class="nf">get_vertices</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">    </span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
@@ -132,7 +182,7 @@
 
 
 <div class="viewcode-block" id="ObjReader.get_faces">
-<a class="viewcode-back" href="../../Atividade3.html#Atividade3.Atividade3.ObjReader.get_faces">[documentos]</a>
+<a class="viewcode-back" href="../../Atividade4.html#Atividade4.Atividade4.ObjReader.get_faces">[documentos]</a>
   <span class="k">def</span> <span class="nf">get_faces</span><span class="p">(</span><span class="bp">self</span><span class="p">):</span>
 <span class="w">    </span><span class="sd">&quot;&quot;&quot;</span>
 <span class="sd">    Lê um arquivo OBJ e retorna os vertices e faces do objeto.</span>
@@ -148,10 +198,14 @@
 
 
 <span class="k">if</span> <span class="vm">__name__</span> <span class="o">==</span> <span class="s2">&quot;__main__&quot;</span><span class="p">:</span>
-  <span class="n">reader</span> <span class="o">=</span> <span class="n">ObjReader</span><span class="p">(</span><span class="s2">&quot;obj\Wolf_obj.obj&quot;</span><span class="p">)</span>
+  <span class="n">reader</span> <span class="o">=</span> <span class="n">ObjReader</span><span class="p">(</span><span class="s2">&quot;obj\Rubik\Robik.obj&quot;</span><span class="p">)</span>
   <span class="n">reader</span><span class="o">.</span><span class="n">read</span><span class="p">()</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">reader</span><span class="o">.</span><span class="n">get_vertices</span><span class="p">())</span>
   <span class="nb">print</span><span class="p">(</span><span class="n">reader</span><span class="o">.</span><span class="n">get_faces</span><span class="p">())</span>
+
+  <span class="n">obj_viewer</span> <span class="o">=</span> <span class="n">ObjViewer</span><span class="p">(</span><span class="s1">&#39;obj\Rubik\Robik.obj&#39;</span><span class="p">)</span>
+  <span class="n">obj_viewer</span><span class="o">.</span><span class="n">generate_image</span><span class="p">(</span><span class="mi">800</span><span class="p">,</span> <span class="mi">600</span><span class="p">,</span> <span class="s1">&#39;output.png&#39;</span><span class="p">)</span>
+
 
 </pre></div>
 
